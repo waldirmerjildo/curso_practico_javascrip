@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intereses</title>
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:440px)">
+</head>
+<body>
+<!-- estilos header -->
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: black;
+        background-color:rgba(253, 207, 2, 0.3);
+        font-weight: bold;
+    }
+    .menu{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+        background-color: rgb(177, 171, 171);
+    }
+    .menu__calculos ul{
+        display: flex;
+        align-items: center;
+        
+    }
+    .menu__logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10px;
+    }
+    .menu__calculos li {
+        padding-right: 10px;
+        list-style: none;
+        
+    }
+    .menu__calculos li a{
+        text-decoration: none;
+        color: black;
+    }
+
+ /* finaliza estilos header_menu */
+ /* empiesa el menu */
+    .caculo{
+        width: 100%;
+        height: 100vh - 50px;
+        
+        
+    }
+    .caculo__container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+    }
+    .caja{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+        justify-content: space-around;
+    }
+    .caculo__container .title{
+        width: 90%;
+        padding-top: 10px;
+        margin-top: 20px;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .respuesta__button{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+
+    }
+    .respuesta__button button{
+        width: 40%;
+    }
+    .respuesta__caja{
+        width: 100%;
+        height: 20px;
+        border: solid 2px black;
+        text-align: center;
+        margin: 0;
+    }
+</style> 
+
+    <header class="menu">
+        <div class="menu__logo">
+            INTERESES
+        </div>
+        <div class="menu__calculos">
+            <ul>
+                <li><a href="">Mediana</a></li>
+                <li><a href="">Moda</a></li>
+                <li><a href="">Salarios</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="caculo">
+        <div class="caculo__container">
+            <h1 class="title caja">Calculo de Inversion con Interes Simple y Compuesto </h1>
+            <div class="caculo__container--inversion caja">
+                <label class="inversion--title">Ingrese el Monto de la Inversion</label>
+                <input type="number" class="inversion--input" id="inversion">
+            </div>
+            <div class="caculo__container--interes caja">
+                <label class="inversion--title">Ingrese el Interes Anual </label>
+                <input type="number" class="inversion--input" id="interes">
+            </div>
+            <div class="caculo__container--tiempo caja">
+                <label class="inversion--title">Ingrse el Tiempo en Años</label>
+                <input type="number" class="inversion--input" id="tiempo">
+            </div>
+            <div class="caculo__container--eleccion caja" >
+                    <select name="interes" id="interesselector">
+                        <option value="1" selected>Interes simple</option>
+                        <option value="2">Interes Compuesto</option>
+                    </select>
+
+            </div>
+            <div class="respuesta caja">
+                <div class="respuesta__button">
+                    <button type="button" onclick="elegir()">calcular</button>
+                    <button type="button" onclick="borrar()">Borrar</button>
+                </div>Capital final en soles:
+                <p class="respuesta__caja" id="respuesta"></p>
+            </div>
+            
+        </div>
+        
+        
+    </section>
+
+
+    <!-- enlaces de javascript -->
+    <script src="./insimandcompu.js"></script>
+</body>
+</html>

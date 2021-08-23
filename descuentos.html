@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos y porcentajes</title>
+</head>
+<body>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #bebebe;
+        }
+        .header{
+            text-align: center;
+        }
+        .main{
+            width: 400px;
+            height: 500px;
+            background: #00F260;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            text-align: center;
+            margin: 0 auto;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            
+        }
+
+        .main form{
+            font-size: 20px;
+            padding: 80%;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            
+            justify-self: center;
+        }
+
+    </style>
+    <header class="header">
+        <h1>Porcentajes y Descuentos</h1>
+    </header>
+    <section class="main">
+        <form action="">
+            <h2 style="color: blue;">Claculo de <span style="color: black;">Descuento</span> de un prodcuto</h2>
+            <label for="precio">Ingrese el precio del Producto</label>
+            <input type="number" id="precio">
+            <label for="descuento">Ingrese el porcentaje de descuento</label>
+            <input type="number" id="descuento">
+            <button type="button" onclick="calcularPrecio()">Calcular Precio Final</button>
+            <input type="text" id="preciofinal" placeholder="precio con descuento">
+            <p id="ResulPrice"></p>
+        </form>
+    </section>
+
+    
+    <script src="./descuentos.js"></script>
+</body>
+</html>

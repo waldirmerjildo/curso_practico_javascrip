@@ -1,0 +1,16 @@
+.caculo__container{
+    background: linear-gradient(207.8deg, #1713e6 16.69%, #F7931A 100%);
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    border: 2px solid black;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: -1px 2px 5px 17px rgba(186,183,183,0.62);
+    -webkit-box-shadow: -1px 2px 5px 17px rgba(186,183,183,0.62);
+    -moz-box-shadow: -1px 2px 5px 17px rgba(186,183,183,0.62);
+}
+h1{
+    margin-top: 10px;
+    border-radius: 20px;
+}
